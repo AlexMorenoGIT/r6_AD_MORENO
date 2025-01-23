@@ -3,12 +3,12 @@ public class Application {
         Car maCar = new Car("Sedan", "Bleu");
         Driver moi = new Driver("John", 20);
 
-        moi.startCar(maCar);
+        maCar.startCar(moi);
         maCar.accelerate();
-        moi.changeGear(maCar, 80);
+        maCar.changeGear(80, moi);
         maCar.slowDown();
-        moi.changeGear(maCar,30);
-        moi.stopCar(maCar);
+        maCar.changeGear(30, moi);
+        maCar.stopCar(moi);
         System.out.println("fini");
     }
 }
