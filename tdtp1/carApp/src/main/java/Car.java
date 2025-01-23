@@ -2,8 +2,8 @@ public class Car {
     public static final int MAX_SPEED = 120;
     public static final int ACCELERATE = 10;
     public static final int LOWEST_SPEED = 0;
-    private final String model;
-    private final String color;
+    private String model;
+    private String color;
     private int speed;
 
     public Car(String model, String color) {
