@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class SimpleClass {
 
     public SimpleClass() {
@@ -11,6 +13,10 @@ public class SimpleClass {
      */
     public int someAdditionMethod(int a, int b) {
         return a + b ;
+    }
+
+    public static boolean isDateOutside(LocalDate date, LocalDate startingDate, LocalDate endingDate) {
+        return !DateUtils.isDateBetween(startingDate, endingDate, date, );
     }
 
     public static void main(String[] args) {
